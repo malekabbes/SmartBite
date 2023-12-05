@@ -1,0 +1,201 @@
+.form1 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result {
+  margin-top: 20px;
+  display: none;
+}
+.menu-gen {
+  background-color: #4c4faf;
+}
+.menu-gen:hover {
+  background-color: rgba(76, 79, 175, 0.713);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: #ff3d00 transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.floating-info {
+  width: 100%;
+  height: 140px;
+}
+.floating-info .floating-content {
+  margin: 0px 3.5%;
+  padding: 2% 2%;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: white;
+  box-shadow: 0px 1px 30px rgba(36, 38, 43, 0.1);
+  border-radius: 25px;
+  height: fit-content;
+  margin-top: -120px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .floating-info .floating-content {
+    justify-content: center !important;
+    background: white !important;
+    height: fit-content !important;
+    z-index: 2 !important;
+    align-content: center !important;
+    align-items: flex-start !important;
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+}
+
+.floating-info .floating-content .floating-item {
+  display: flex;
+  gap: 20px !important;
+  flex-direction: row;
+  justify-content: center;
+}
+.floating-info .floating-content .floating-item .left img {
+  width: 80px;
+  height: 80px;
+}
+.floating-info .floating-content .floating-item .right {
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+.floating-info .floating-content .floating-item .right .title {
+  color: #10b981;
+  font-weight: 600;
+  font-size: 24px;
+  padding-top: 1.1rem !important;
+}
+.large-food-cards {
+  margin-top: 8vw;
+  margin-bottom: 85px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .large-food-cards {
+    margin-top: 30vh;
+  }
+  .large-food-cards .food-cards-cont {
+    margin: 1% 3.5%;
+    /* gap: 11%; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.large-food-cards .food-cards-cont {
+  margin: 0 3.5%;
+  gap: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.large-food-cards .food-cards-cont .food-card-item {
+  width: 380px;
+  height: 240px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Changed to cover for better aspect ratio handling */
+  transition: background-size 0.3s ease-in-out;
+}
+.large-food-cards .food-cards-cont .food-card-item:hover {
+  background-size: 110%;
+}
+.large-food-cards .food-cards-cont .food-card-item .content {
+  margin: 50px 20px;
+}
+.large-food-cards .food-cards-cont .food-card-item .content .sub-title {
+  font-family: "Satisfy";
+  color: #3bb77e;
+  font-size: 16px;
+}
+.large-food-cards .food-cards-cont .food-card-item .content .title {
+  font-size: 24px;
+  letter-spacing: 0.56px;
+}
+.large-food-cards .food-cards-cont .food-card-item .content .cta-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100px;
+  height: 30px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffba43;
+  border-radius: 6px;
+  color: white;
+  font-size: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.big-title {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 30px;
+}
